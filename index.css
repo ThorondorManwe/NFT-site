@@ -9,38 +9,18 @@ Challenge:
    font if Roboto is unavailable.
 4. Override HTML's default margin.
 */
- 
- 
- body{
-     font-size: 16px;
-     color: #2b283a;
-     font-family: 'Roboto', sans-serif;
-     margin: 0;
- }
- 
- body{
-   font-size: 16px;
-   color: #2b283a;
-   font-family: 'Roboto', sans-serif;
-   margin: 0;
-}
 
-header{
-   background-color: #5f29a3;
-   padding: 45px 0px;
-}
 
-h1{
-   color: whitesmoke;
-   font-size: 36px;
-   margin: 0;
-}
-
-h3{
-   color: #d0aaff;
-   font-size: 20px;
-   margin: 0;
-}
+/* 
+Challenge:
+1. Add CSS so the text in the first section 
+   renders correctly. 
+⚠️ Watch out for the amount of white space 
+   you have between the start of the section 
+   and the h2. Los h2 tienen margin default por eso se pone a cero
+   el margin del h2 se traslapaba con el de su parent
+⚠️ Don't write too much code!
+*/
 
 /* 
 Challenge:
@@ -57,7 +37,189 @@ still be up right up against the left-hand edge of
 the browser. That is fine for now.   
 */
 
- 
- 
+/* 
+Challenge:
+1. Set the color of the link in the paragraph.
+2. Make the link color change on hover and 
+   active states.
+3. Search online to find out how you can give 
+   the underline a dotted appearance. 
+*/
 
+/* 
+Challenge:
+1. In index.html, wrap the contents of the
+   header and sections in container divs.
+2. Create a selector and add the properties 
+   needed to fix the content width and align
+   it to the center.
+⚠️ The background colors must stay full 
+   width!
+*/
 
+/* 
+Challenge:
+1. Create a "section" selector and give it the 
+  same padding as the header.
+2. In index.html, find the image of the purple 
+  sneakers and attach a class to it. 
+3. Make it so this image takes up 100% 
+  of the section width.
+*/
+
+/* 
+Challenge:
+1. Use comments to divide up the CSS
+   into segments.
+⚠️ Don't use too many comments!
+*/
+
+/* 
+Challenge:
+1. Give the images in section two a class.
+2. Use that class to set the width and 
+   border-radius for the images.
+3. Wrap the two images in a container div 
+   and give it a class.
+4. Create the CSS selector for that class 
+   and use flex-box to layout the images
+   as shown in the slide.
+*/
+
+body{
+   font-size: 16px;
+   color: #2b283a;
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+}
+
+/* typography */
+
+h1{
+   color: whitesmoke;
+   font-size: 36px;
+   margin: 0;
+}
+
+h2{
+   margin: 0;
+}
+
+h3{
+   color: #d0aaff;
+   font-size: 20px;
+   margin:0;
+}
+
+/* 
+Challenge:
+1. Increase the line-height of the 
+   paragraph text to 23px;
+*/
+
+p{
+   line-height: 23px;
+}
+
+/* links */
+
+a{
+   color: #ef5839;
+   text-decoration: underline dotted; 
+}
+
+a:hover, a:active{
+   color: #d4b44c;
+}
+
+/* 
+Challenge:
+1. Use the "display" property to make the
+   new links behave more like buttons!
+   display: inline-block; combina inline y block para que el enlace funcione como boton
+*/
+
+.btn{
+    padding: 10px 19px;
+    border-radius: 4.6px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-dark{
+    background-color: #5f29a3;
+    color: whitesmoke;
+}
+
+.btn-mid{
+    background-color: #f0e0ff;
+    color: #5f29a3;
+}
+
+.btn-light{
+    background-color: whitesmoke;
+    color: #5f29a3;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #f3e885;
+    color: #2b283a;
+}
+
+/* layout */
+header, 
+section, 
+footer {
+   padding: 45px 0;
+}
+
+header, .section-two{
+   background-color: #5f29a3; 
+}
+
+.section-two{
+   color: whitesmoke;
+}
+
+.container{
+   width: 620px;
+   margin: 0 auto;
+}
+
+.main-image{
+   width:100%;
+}
+
+.section-two-image-container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.feature-image {
+   width: 300px;
+   border-radius: 4.6px;
+}
+
+/* 
+Challenge:
+1. Center the footer's text horizontally.
+2. Give the text space top and bottom.
+   ⚠️ Don't add margin! Look at sections
+   and header for inspiration. 
+3. Give the text the correct color.
+*/
+
+footer {
+   font-size: 16px;
+   text-align: center;
+   color: #5f29a3;
+}
+
+/* 
+Challenge:
+1. Refactor the CSS to make it DRYer
+   by grouping selectors together where
+   possible.
+*/
